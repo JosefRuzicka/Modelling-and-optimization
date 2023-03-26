@@ -1,0 +1,37 @@
+¿Cuál fue el promedio de clientes servidos?
+(46589 + 46418 + 46811) / 3 = 46606 clientes servidos
+
+¿Cuál fue el promedio de clientes que se perdieron por no poder ingresar a la cola?
+(17261 + 17525 + 17389) / 3 = 17392 clientes perdidos
+
+¿Cuál fue el tiempo de espera en la cola promedio para los clientes?
+(0.277 + 0.278 + 0.275) / 3 = 0.277 horas
+
+¿Cuál fue el promedio de tiempo ocioso para el servidor?
+(0.0 + 0.0 + 0.0) / 3 = 0
+
+Luego repita el experimento con 2 y 3 servidores.
+
+¿Cuál de los modelos logra un buen balance entre el tiempo de espera y el tiempo ocioso?
+Promedios con dos servidores:
+    clientes servidos: 48610
+    clientes perdidos: 13320
+    tiempo de espera: 0.253
+    tiempo ocioso: 0.003
+
+Promedios con tres servidores:
+    clientes servidos: 50812
+    clientes perdidos: 15508
+    tiempo de espera: 0.24
+    tiempo ocioso: 0.013
+
+
+
+¿Qué recomendaría usted y por qué? 
+
+Con un solo servidor, se pierde la mayor cantidad de clientes, y con tres servidores,
+hay un significativo aumento en el idle time de cada servidor, lo que implica un
+desperdicio de recursos (podría ser dinero si el servidor fuera un cajero, por ejemplo), 
+pero en nuestro caso significan operaciones computacionales (se ejecutan ifs y cálculos 
+sobre objetos que no están trabajando). Por esta razón se recomienda balancear el tiempo
+que se desperdicia de los servidores, y se maximisa la cantidad de clientes atendidos.
